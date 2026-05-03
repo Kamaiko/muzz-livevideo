@@ -595,38 +595,139 @@
       <div class="max-w-2xl mb-16 md:mb-20 reveal">
         <p class="text-xs uppercase tracking-wider2 text-accent mb-4">07 &middot; Annexe &middot; Contraintes à intégrer</p>
         <h2 class="font-serif text-4xl md:text-5xl leading-tight tracking-tightish mb-6">
-          Quatre contraintes à garder en tête pour le build.
+          Trois contraintes à garder en tête pour le build.
         </h2>
         <p class="text-lg text-mute leading-relaxed">
-          Maintenant que les choix produit sont sur la table, voici les quatre contraintes
-          opérationnelles &mdash; juridiques, économiques, techniques et légales &mdash;
-          à intégrer dès le départ. Aucune n'est un blocage&nbsp;; les nommer maintenant
-          évite de les découvrir dans 6 mois.
+          Maintenant que les choix produit sont sur la table, voici les trois contraintes
+          opérationnelles &mdash; juridiques, économiques et techniques &mdash; à intégrer
+          dès le départ. Aucune n'est un blocage&nbsp;; les nommer maintenant évite de les
+          découvrir dans 6 mois.
         </p>
       </div>
 
-      <!-- 4A — Mur juridique -->
+      <!-- Contrainte n°1 — Cadre juridique (fusion PI + lois vie privée) -->
       <div class="border border-line bg-bg p-8 md:p-12 mb-12 reveal">
         <div class="flex items-start gap-4 mb-6">
           <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent/10 text-accent flex items-center justify-center">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-              <path d="M12 9v4M12 17h.01"/>
-              <path d="M10.3 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.41 0z"/>
+              <path d="M12 2v20M5 7h14l-2 5h-10z"/><path d="M5 22h14"/>
             </svg>
           </div>
           <div>
-            <p class="text-xs uppercase tracking-wider2 text-mute mb-1">Contrainte n°1 &middot; Juridique</p>
-            <h3 class="font-serif text-2xl md:text-3xl">Le nom et la techno doivent être les nôtres.</h3>
+            <p class="text-xs uppercase tracking-wider2 text-mute mb-1">Contrainte n°1 &middot; Cadre juridique</p>
+            <h3 class="font-serif text-2xl md:text-3xl">Deux volets&nbsp;: marque &amp; lois sur la vie privée.</h3>
           </div>
         </div>
-        <div class="md:pl-16 space-y-4 text-mute leading-relaxed">
-          <p>
+
+        <!-- Volet A : marque / propriété intellectuelle -->
+        <div class="md:pl-16 mb-10">
+          <p class="text-xs uppercase tracking-wider2 text-accent mb-3">Volet A &middot; Nom &amp; propriété intellectuelle</p>
+          <p class="text-mute leading-relaxed mb-3">
             FaceTime est un protocole <strong class="text-ink font-semibold">propriétaire et fermé</strong>
             d'Apple. Le nom et la référence directe exposent à une mise en demeure
             (Apple a poursuivi Prepear, 5 employés, juste pour un logo de poire).
           </p>
-          <p class="mt-6 text-ink font-medium border-l-2 border-accent pl-4">
-            Verdict : nom propre, techno propre. Une simple contrainte de départ.
+          <p class="text-sm text-ink border-l-2 border-accent pl-4">
+            <strong>À faire&nbsp;:</strong> nom propre, techno propre. Vérification de marque
+            au registre canadien (CIPO) et américain (USPTO) avant lancement &mdash;
+            ~50 $ d'inscription, ~30 min.
+          </p>
+        </div>
+
+        <!-- Volet B : lois vie privée -->
+        <div class="md:pl-16">
+          <p class="text-xs uppercase tracking-wider2 text-accent mb-3">Volet B &middot; Lois sur la vie privée &amp; modération</p>
+          <p class="text-mute leading-relaxed mb-6">
+            Une app vidéo qui héberge des conversations entre étrangers est encadrée par
+            plusieurs lois selon les pays. Aucune n'est insurmontable, mais les ignorer
+            = poursuites garanties à terme. Voici les quatre qui touchent ton concept.
+          </p>
+
+          <div class="space-y-3 mb-8">
+
+            <div class="border border-line bg-bg p-5">
+              <div class="flex items-baseline justify-between mb-1">
+                <h4 class="font-serif text-base">Loi 25 (Québec)</h4>
+                <span class="text-xs text-mute">en vigueur depuis 2023</span>
+              </div>
+              <p class="text-sm text-mute leading-relaxed mb-2">
+                Loi sur la protection des renseignements personnels. Tout ce qui est collecté
+                sur un utilisateur (nom, email, vidéos, métadonnées) doit&nbsp;:
+              </p>
+              <ul class="text-sm text-ink leading-relaxed space-y-1">
+                <li>· Avoir un consentement clair (cases à cocher, pas pré-cochées)</li>
+                <li>· Être stocké au Canada ou avec garanties équivalentes</li>
+                <li>· Pouvoir être supprimé sur demande de l'utilisateur (droit à l'oubli)</li>
+                <li>· Être documenté dans une politique de confidentialité accessible</li>
+              </ul>
+              <p class="text-xs text-mute mt-3 italic">Sanctions max&nbsp;: 25 M$ ou 4&nbsp;% du chiffre d'affaires mondial.</p>
+            </div>
+
+            <div class="border border-line bg-bg p-5">
+              <div class="flex items-baseline justify-between mb-1">
+                <h4 class="font-serif text-base">DSA &mdash; Digital Services Act (Union européenne)</h4>
+                <span class="text-xs text-mute">en vigueur depuis 2024</span>
+              </div>
+              <p class="text-sm text-mute leading-relaxed mb-2">
+                S'applique dès qu'on a des utilisateurs en Europe. Trois obligations clés&nbsp;:
+              </p>
+              <ul class="text-sm text-ink leading-relaxed space-y-1">
+                <li>· Mécanisme de signalement de contenu illégal (le bouton Report)</li>
+                <li>· Retrait du contenu signalé en 24-48h max</li>
+                <li>· Transparence sur les algorithmes de modération (rapport annuel)</li>
+              </ul>
+              <p class="text-xs text-mute mt-3 italic">Sanctions max&nbsp;: 6&nbsp;% du chiffre d'affaires mondial.</p>
+            </div>
+
+            <div class="border border-line bg-bg p-5">
+              <div class="flex items-baseline justify-between mb-1">
+                <h4 class="font-serif text-base">COPPA &mdash; protection des mineurs (États-Unis)</h4>
+                <span class="text-xs text-mute">vérification d'âge obligatoire</span>
+              </div>
+              <p class="text-sm text-mute leading-relaxed mb-2">
+                Toute app accessible à des moins de 13 ans aux US doit&nbsp;:
+              </p>
+              <ul class="text-sm text-ink leading-relaxed space-y-1">
+                <li>· Soit interdire les moins de 13 ans (vérification d'âge à l'inscription)</li>
+                <li>· Soit obtenir consentement parental vérifiable + restrictions strictes</li>
+              </ul>
+              <p class="text-xs text-mute mt-3 italic">Solution la plus simple&nbsp;: 18+ obligatoire à l'inscription, point.</p>
+            </div>
+
+            <div class="border border-line bg-bg p-5">
+              <div class="flex items-baseline justify-between mb-1">
+                <h4 class="font-serif text-base">Détection CSAM &mdash; obligatoire partout</h4>
+                <span class="text-xs text-mute">contenu pédopornographique</span>
+              </div>
+              <p class="text-sm text-mute leading-relaxed">
+                Toute plateforme avec contenu vidéo généré par utilisateurs DOIT
+                utiliser des outils de détection (PhotoDNA de Microsoft, gratuit pour les petites
+                plateformes). Tout contenu détecté doit être signalé au NCMEC (US) et équivalents.
+                Non négociable, peu importe la taille.
+              </p>
+            </div>
+
+          </div>
+
+          <p class="text-xs uppercase tracking-wider2 text-accent mb-3">Checklist de conformité dès le MVP</p>
+          <div class="border border-line bg-bg p-5 mb-6">
+            <ul class="text-sm text-ink leading-relaxed space-y-2">
+              <li>· Politique de confidentialité &amp; CGU (générateur tipo Termly ~30 $/mois ou rédigées avec une IA, validées par avocat plus tard quand on a des revenus)</li>
+              <li>· Consentement clair à l'inscription (case à cocher non pré-cochée)</li>
+              <li>· 18+ obligatoire avec vérification d'âge minimale (date de naissance + carte de crédit ou ID)</li>
+              <li>· Bouton Report dans chaque lobby + procédure documentée</li>
+              <li>· Modération &mdash; IA, humain ou hybride (cf. Contrainte n°3)</li>
+              <li>· Détection CSAM via PhotoDNA (gratuit pour petites plateformes)</li>
+              <li>· Stockage des données au Canada (AWS Montréal, OVH, etc.)</li>
+              <li>· Page «&nbsp;contact légal&nbsp;» pour subpoenas et demandes des autorités</li>
+            </ul>
+          </div>
+
+          <p class="text-ink font-medium border-l-2 border-accent pl-4 leading-relaxed">
+            Verdict&nbsp;: pas optionnel, mais pas cher au lancement. La majorité du travail
+            peut se faire avec des outils en ligne (~30 $/mois) ou en s'aidant d'une IA pour
+            rédiger les politiques. Une consultation d'avocat (~300-500 $ ponctuel) devient
+            nécessaire <em>après</em> le MVP, quand on commence à monétiser ou à scaler.
           </p>
         </div>
       </div>
@@ -735,7 +836,7 @@
 
         <p class="md:pl-16 text-mute leading-relaxed mb-8">
           Une plateforme vidéo avec inconnus <strong class="text-ink">doit</strong> avoir une forme de
-          modération &mdash; à la fois pour des raisons légales (cf. Contrainte n°4) et pour
+          modération &mdash; à la fois pour des raisons légales (cf. Contrainte n°1, volet B) et pour
           que l'expérience reste utilisable. Trois approches possibles, avec leurs tradeoffs.
         </p>
 
@@ -787,115 +888,6 @@
             Verdict&nbsp;: pas un blocage. À trancher entre l'IA seule (le plus rapide à lancer)
             et l'hybride (le standard mature). Dans tous les cas, l'absence totale de modération
             n'est plus une option viable depuis Omegle.
-          </p>
-        </div>
-      </div>
-
-      <!-- 4D — Cadre légal (vulgarisé) -->
-      <div class="border border-line bg-bg p-8 md:p-12 mt-12 reveal">
-        <div class="flex items-start gap-4 mb-6">
-          <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent/10 text-accent flex items-center justify-center">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-              <path d="M12 2v20M5 7h14l-2 5h-10z"/><path d="M5 22h14"/>
-            </svg>
-          </div>
-          <div>
-            <p class="text-xs uppercase tracking-wider2 text-mute mb-1">Contrainte n°4 &middot; Cadre légal</p>
-            <h3 class="font-serif text-2xl md:text-3xl">Ce qu'il faut savoir, en français simple.</h3>
-          </div>
-        </div>
-
-        <p class="md:pl-16 text-mute leading-relaxed mb-8">
-          Une app vidéo qui héberge des conversations entre étrangers est encadrée par
-          plusieurs lois selon les pays. Aucune n'est insurmontable, mais les ignorer
-          = poursuites garanties à terme. Voici les quatre qui touchent ton concept.
-        </p>
-
-        <div class="md:pl-16 space-y-3 mb-8">
-
-          <div class="border border-line bg-bg p-5">
-            <div class="flex items-baseline justify-between mb-1">
-              <h4 class="font-serif text-base">Loi 25 (Québec)</h4>
-              <span class="text-xs text-mute">en vigueur depuis 2023</span>
-            </div>
-            <p class="text-sm text-mute leading-relaxed mb-2">
-              Loi sur la protection des renseignements personnels. Tout ce qui est collecté
-              sur un utilisateur (nom, email, vidéos, métadonnées) doit&nbsp;:
-            </p>
-            <ul class="text-sm text-ink leading-relaxed space-y-1">
-              <li>· Avoir un consentement clair (cases à cocher, pas pré-cochées)</li>
-              <li>· Être stocké au Canada ou avec garanties équivalentes</li>
-              <li>· Pouvoir être supprimé sur demande de l'utilisateur ($droit à l'oubli$)</li>
-              <li>· Être documenté dans une politique de confidentialité accessible</li>
-            </ul>
-            <p class="text-xs text-mute mt-3 italic">Sanctions max&nbsp;: 25 M$ ou 4&nbsp;% du chiffre d'affaires mondial.</p>
-          </div>
-
-          <div class="border border-line bg-bg p-5">
-            <div class="flex items-baseline justify-between mb-1">
-              <h4 class="font-serif text-base">DSA &mdash; Digital Services Act (Union européenne)</h4>
-              <span class="text-xs text-mute">en vigueur depuis 2024</span>
-            </div>
-            <p class="text-sm text-mute leading-relaxed mb-2">
-              S'applique dès qu'on a des utilisateurs en Europe. Trois obligations clés&nbsp;:
-            </p>
-            <ul class="text-sm text-ink leading-relaxed space-y-1">
-              <li>· Mécanisme de signalement de contenu illégal (le bouton Report)</li>
-              <li>· Retrait du contenu signalé en 24-48h max</li>
-              <li>· Transparence sur les algorithmes de modération (rapport annuel)</li>
-            </ul>
-            <p class="text-xs text-mute mt-3 italic">Sanctions max&nbsp;: 6&nbsp;% du chiffre d'affaires mondial.</p>
-          </div>
-
-          <div class="border border-line bg-bg p-5">
-            <div class="flex items-baseline justify-between mb-1">
-              <h4 class="font-serif text-base">COPPA &mdash; protection des mineurs (États-Unis)</h4>
-              <span class="text-xs text-mute">vérification d'âge obligatoire</span>
-            </div>
-            <p class="text-sm text-mute leading-relaxed mb-2">
-              Toute app accessible à des moins de 13 ans aux US doit&nbsp;:
-            </p>
-            <ul class="text-sm text-ink leading-relaxed space-y-1">
-              <li>· Soit interdire les moins de 13 ans (vérification d'âge à l'inscription)</li>
-              <li>· Soit obtenir consentement parental vérifiable + restrictions strictes</li>
-            </ul>
-            <p class="text-xs text-mute mt-3 italic">Solution la plus simple&nbsp;: 18+ obligatoire à l'inscription, point.</p>
-          </div>
-
-          <div class="border border-line bg-bg p-5">
-            <div class="flex items-baseline justify-between mb-1">
-              <h4 class="font-serif text-base">Détection CSAM &mdash; obligatoire partout</h4>
-              <span class="text-xs text-mute">contenu pédopornographique</span>
-            </div>
-            <p class="text-sm text-mute leading-relaxed">
-              Toute plateforme avec contenu vidéo généré par utilisateurs DOIT
-              utiliser des outils de détection (PhotoDNA de Microsoft, gratuit pour les petites
-              plateformes). Tout contenu détecté doit être signalé au NCMEC (US) et équivalents.
-              Non négociable, peu importe la taille.
-            </p>
-          </div>
-
-        </div>
-
-        <div class="md:pl-16">
-          <p class="text-xs uppercase tracking-wider2 text-accent mb-3">Ce qu'il faut faire pour être conforme dès le MVP</p>
-          <div class="border border-line bg-bg p-5 mb-6">
-            <ul class="text-sm text-ink leading-relaxed space-y-2">
-              <li>· Politique de confidentialité &amp; CGU (générateur tipo Termly ~30 $/mois ou rédigées avec une IA, validées par avocat plus tard quand on a des revenus)</li>
-              <li>· Consentement clair à l'inscription (case à cocher non pré-cochée)</li>
-              <li>· 18+ obligatoire avec vérification d'âge minimale (date de naissance + carte de crédit ou ID)</li>
-              <li>· Bouton Report dans chaque lobby + procédure documentée</li>
-              <li>· Modération &mdash; IA, humain ou hybride (cf. Contrainte n°3)</li>
-              <li>· Détection CSAM via PhotoDNA (gratuit pour petites plateformes)</li>
-              <li>· Stockage des données au Canada (AWS Montréal, OVH, etc.)</li>
-              <li>· Page «&nbsp;contact légal&nbsp;» pour subpoenas et demandes des autorités</li>
-            </ul>
-          </div>
-          <p class="text-ink font-medium border-l-2 border-accent pl-4 leading-relaxed">
-            Verdict&nbsp;: pas optionnel, mais pas cher au lancement. La majorité du travail
-            peut se faire avec des outils en ligne (~30 $/mois) ou en s'aidant d'une IA pour
-            rédiger les politiques. Une consultation d'avocat (~300-500 $ ponctuel) devient
-            nécessaire <em>après</em> le MVP, quand on commence à monétiser ou à scaler.
           </p>
         </div>
       </div>
