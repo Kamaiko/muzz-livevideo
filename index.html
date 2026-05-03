@@ -474,8 +474,16 @@
             est <strong class="text-ink">limité à 8-12 personnes</strong>, durée fixe (45 min),
             modération automatique avec bouton report.
           </p>
-          <div class="text-xs uppercase tracking-wider2 text-mute mb-1">Tradeoff</div>
-          <p class="text-sm text-ink mb-3">Ton concept original quasi-pur, juste cadré pour survivre légalement et limiter le coût modération.</p>
+          <div class="grid grid-cols-2 gap-3 mb-3">
+            <div>
+              <div class="text-xs uppercase tracking-wider2 text-accent mb-1">Avantages</div>
+              <p class="text-xs text-ink leading-relaxed">Concept original quasi-pur. Survit légalement. Spontanéité préservée.</p>
+            </div>
+            <div>
+              <div class="text-xs uppercase tracking-wider2 text-mute mb-1">Inconvénients</div>
+              <p class="text-xs text-ink leading-relaxed">Coût modération continu. Risque de salons vides en heures creuses.</p>
+            </div>
+          </div>
           <div class="text-xs uppercase tracking-wider2 text-mute mb-1">Pour qui</div>
           <p class="text-sm text-ink">Ceux qui cherchent à discuter <em>maintenant</em> sur un sujet, sans s'engager à un horaire.</p>
         </article>
@@ -492,8 +500,16 @@
             (ex&nbsp;: «&nbsp;Voyage Espagne &mdash; mercredi 20h&nbsp;»). Un calendrier comme Meetup,
             mais 100 % vidéo.
           </p>
-          <div class="text-xs uppercase tracking-wider2 text-mute mb-1">Tradeoff</div>
-          <p class="text-sm text-ink mb-3">Réduit drastiquement le coût modération (fenêtres précises). Crée un rituel mémorable.</p>
+          <div class="grid grid-cols-2 gap-3 mb-3">
+            <div>
+              <div class="text-xs uppercase tracking-wider2 text-accent mb-1">Avantages</div>
+              <p class="text-xs text-ink leading-relaxed">Coût modération minime. Sessions toujours pleines. Crée un rituel.</p>
+            </div>
+            <div>
+              <div class="text-xs uppercase tracking-wider2 text-mute mb-1">Inconvénients</div>
+              <p class="text-xs text-ink leading-relaxed">Perd la spontanéité. Demande de planifier sa semaine.</p>
+            </div>
+          </div>
           <div class="text-xs uppercase tracking-wider2 text-mute mb-1">Pour qui</div>
           <p class="text-sm text-ink">Ceux qui aiment se réserver un moment dans la semaine pour leur passion.</p>
         </article>
@@ -510,8 +526,16 @@
             qui modère et anime. Le host engage sa réputation, ce qui auto-régule
             les comportements. Modèle proche de Twitch ou Discord communautaire.
           </p>
-          <div class="text-xs uppercase tracking-wider2 text-mute mb-1">Tradeoff</div>
-          <p class="text-sm text-ink mb-3">Modération déléguée aux passionnés &mdash; coûts opérationnels minimaux. Mais demande de recruter de bons hosts.</p>
+          <div class="grid grid-cols-2 gap-3 mb-3">
+            <div>
+              <div class="text-xs uppercase tracking-wider2 text-accent mb-1">Avantages</div>
+              <p class="text-xs text-ink leading-relaxed">Modération déléguée. Communauté soudée. Hosts amènent leur audience.</p>
+            </div>
+            <div>
+              <div class="text-xs uppercase tracking-wider2 text-mute mb-1">Inconvénients</div>
+              <p class="text-xs text-ink leading-relaxed">Recrutement difficile. Qualité variable. Dépendance aux hosts populaires.</p>
+            </div>
+          </div>
           <div class="text-xs uppercase tracking-wider2 text-mute mb-1">Pour qui</div>
           <p class="text-sm text-ink">Communautés de niche où il existe déjà des leaders d'opinion (auto, voyage, gaming&hellip;).</p>
         </article>
@@ -528,8 +552,16 @@
             sujet bien défini (ex&nbsp;: voyage uniquement). Construire une vraie communauté.
             Une fois prouvé, étendre aux autres sujets.
           </p>
-          <div class="text-xs uppercase tracking-wider2 text-mute mb-1">Tradeoff</div>
-          <p class="text-sm text-ink mb-3">Élimine le piège du cold start «&nbsp;trop de sujets vides&nbsp;». Mais attention au choix du premier sujet.</p>
+          <div class="grid grid-cols-2 gap-3 mb-3">
+            <div>
+              <div class="text-xs uppercase tracking-wider2 text-accent mb-1">Avantages</div>
+              <p class="text-xs text-ink leading-relaxed">Cold start gérable. Vraie communauté avant d'élargir. Marketing focalisé.</p>
+            </div>
+            <div>
+              <div class="text-xs uppercase tracking-wider2 text-mute mb-1">Inconvénients</div>
+              <p class="text-xs text-ink leading-relaxed">Vision long terme moins évidente au début. Choix du sujet critique.</p>
+            </div>
+          </div>
           <div class="text-xs uppercase tracking-wider2 text-mute mb-1">Pour qui</div>
           <p class="text-sm text-ink">Adopté par toutes les startups réseaux qui ont percé (Facebook = Harvard, Reddit = programmeurs, etc.).</p>
         </article>
@@ -565,36 +597,94 @@
         <li class="grid grid-cols-[60px_1fr] gap-4 items-start reveal">
           <div class="font-serif text-3xl text-accent num">01</div>
           <div>
-            <p class="font-serif text-lg text-bg mb-1">Quel(s) sujet(s) de salon en premier&nbsp;?</p>
-            <p class="text-sm text-bg/60">Voyage, auto, spiritualité, support aux personnes seules, autre&nbsp;? Si tu devais en choisir UN pour le MVP, ce serait lequel&nbsp;?</p>
+            <p class="font-serif text-lg text-bg mb-2">Quels 3 à 5 sujets on lance en priorité&nbsp;?</p>
+            <p class="text-sm text-bg/60 mb-4">Voyage, auto, spiritualité, support aux personnes seules&hellip; On peut techniquement lancer avec 50 sujets &mdash; mais avec 50 sujets et 100 utilisateurs, chaque salon est vide. 3-5 bien choisis = chaque salon vit. On élargit après.</p>
+            <div class="grid sm:grid-cols-2 gap-3 mt-2">
+              <div class="border border-bg/15 p-3">
+                <p class="text-xs uppercase tracking-wider2 text-accent mb-1">Lancer avec peu de sujets</p>
+                <p class="text-xs text-bg/70 leading-relaxed">+ chaque salon vit dès J1<br />+ marketing focalisé<br />&minus; sentiment de moins riche</p>
+              </div>
+              <div class="border border-bg/15 p-3">
+                <p class="text-xs uppercase tracking-wider2 text-accent mb-1">Lancer avec beaucoup de sujets</p>
+                <p class="text-xs text-bg/70 leading-relaxed">+ vision plus complète<br />+ moins de frustration «&nbsp;mon sujet n'existe pas&nbsp;»<br />&minus; salons vides &rarr; abandon utilisateurs</p>
+              </div>
+            </div>
           </div>
         </li>
         <li class="grid grid-cols-[60px_1fr] gap-4 items-start reveal reveal-delay-1">
           <div class="font-serif text-3xl text-accent num">02</div>
           <div>
-            <p class="font-serif text-lg text-bg mb-1">L'app vise qui d'abord&nbsp;?</p>
-            <p class="text-sm text-bg/60">Grand public ouvert à tous&nbsp;? Ou un angle communautaire plus défini (ex : francophones de la diaspora, jeunes pros, retraités actifs)&nbsp;? Plus c'est précis, plus le cold start est facile.</p>
+            <p class="font-serif text-lg text-bg mb-2">L'app vise qui d'abord&nbsp;?</p>
+            <p class="text-sm text-bg/60 mb-4">Grand public ouvert à tous&nbsp;? Ou un angle communautaire plus défini (ex : francophones de la diaspora, jeunes pros, retraités actifs)&nbsp;?</p>
+            <div class="grid sm:grid-cols-2 gap-3 mt-2">
+              <div class="border border-bg/15 p-3">
+                <p class="text-xs uppercase tracking-wider2 text-accent mb-1">Grand public</p>
+                <p class="text-xs text-bg/70 leading-relaxed">+ marché potentiel énorme<br />+ pas besoin de niche éditoriale<br />&minus; cold start brutal (concurrence directe avec géants)</p>
+              </div>
+              <div class="border border-bg/15 p-3">
+                <p class="text-xs uppercase tracking-wider2 text-accent mb-1">Niche communautaire</p>
+                <p class="text-xs text-bg/70 leading-relaxed">+ acquisition organique facile<br />+ communauté soudée<br />&minus; plafond de croissance plus bas</p>
+              </div>
+            </div>
           </div>
         </li>
         <li class="grid grid-cols-[60px_1fr] gap-4 items-start reveal reveal-delay-2">
           <div class="font-serif text-3xl text-accent num">03</div>
           <div>
-            <p class="font-serif text-lg text-bg mb-1">Modération automatique au début, ou on attend des hosts humains&nbsp;?</p>
-            <p class="text-sm text-bg/60">Auto = lance plus vite, mais qualité variable. Hosts = qualité garantie, mais lent.</p>
+            <p class="font-serif text-lg text-bg mb-2">Modération automatique, ou hosts humains&nbsp;?</p>
+            <p class="text-sm text-bg/60 mb-4">L'IA en 2026 fait 95&nbsp;% du travail à ~2&nbsp;$/salon de 45&nbsp;min. Mais un host humain ajoute une couche de qualité et d'animation.</p>
+            <div class="grid sm:grid-cols-2 gap-3 mt-2">
+              <div class="border border-bg/15 p-3">
+                <p class="text-xs uppercase tracking-wider2 text-accent mb-1">Modération IA seule</p>
+                <p class="text-xs text-bg/70 leading-relaxed">+ ~40&times; moins cher qu'humain<br />+ scalable instantanément<br />&minus; rate les nuances culturelles<br />&minus; pas d'animation de salon</p>
+              </div>
+              <div class="border border-bg/15 p-3">
+                <p class="text-xs uppercase tracking-wider2 text-accent mb-1">Hosts humains (bénévoles ou payés)</p>
+                <p class="text-xs text-bg/70 leading-relaxed">+ qualité &amp; engagement supérieurs<br />+ communauté fidélisée<br />&minus; difficile à recruter<br />&minus; lent à scaler</p>
+              </div>
+            </div>
           </div>
         </li>
         <li class="grid grid-cols-[60px_1fr] gap-4 items-start reveal reveal-delay-3">
           <div class="font-serif text-3xl text-accent num">04</div>
           <div>
-            <p class="font-serif text-lg text-bg mb-1">Marché initial &mdash; Québec, francophone, ou anglophone tout de suite&nbsp;?</p>
-            <p class="text-sm text-bg/60">Influence le nom, le ton, et la stratégie de cold start.</p>
+            <p class="font-serif text-lg text-bg mb-2">Marché initial &mdash; Québec, francophone, ou anglophone&nbsp;?</p>
+            <p class="text-sm text-bg/60 mb-4">Influence le nom, le ton, et la stratégie d'acquisition.</p>
+            <div class="grid sm:grid-cols-3 gap-3 mt-2">
+              <div class="border border-bg/15 p-3">
+                <p class="text-xs uppercase tracking-wider2 text-accent mb-1">Québec</p>
+                <p class="text-xs text-bg/70 leading-relaxed">+ proche, testable IRL<br />+ entraide locale<br />&minus; 8M de personnes max</p>
+              </div>
+              <div class="border border-bg/15 p-3">
+                <p class="text-xs uppercase tracking-wider2 text-accent mb-1">Francophone</p>
+                <p class="text-xs text-bg/70 leading-relaxed">+ ~300M locuteurs<br />+ peu de concurrence vs anglo<br />&minus; fragmenté géographiquement</p>
+              </div>
+              <div class="border border-bg/15 p-3">
+                <p class="text-xs uppercase tracking-wider2 text-accent mb-1">Anglophone d'abord</p>
+                <p class="text-xs text-bg/70 leading-relaxed">+ marché global<br />+ plus de capital VC<br />&minus; concurrence brutale</p>
+              </div>
+            </div>
           </div>
         </li>
         <li class="grid grid-cols-[60px_1fr] gap-4 items-start reveal">
           <div class="font-serif text-3xl text-accent num">05</div>
           <div>
-            <p class="font-serif text-lg text-bg mb-1">Quel est ton objectif honnête avec ce projet&nbsp;?</p>
-            <p class="text-sm text-bg/60">Projet de passion (on s'en fout des coûts tant qu'on peut payer), side-project rentable (breakeven en 6-12 mois), ou vraie startup à fonds levés&nbsp;? La réponse change tout le reste.</p>
+            <p class="font-serif text-lg text-bg mb-2">Quel est ton objectif honnête avec ce projet&nbsp;?</p>
+            <p class="text-sm text-bg/60 mb-4">La réponse change tout le reste &mdash; rythme, modèle, choix techniques.</p>
+            <div class="grid sm:grid-cols-3 gap-3 mt-2">
+              <div class="border border-bg/15 p-3">
+                <p class="text-xs uppercase tracking-wider2 text-accent mb-1">Projet passion</p>
+                <p class="text-xs text-bg/70 leading-relaxed">+ liberté créative totale<br />+ pas de pression<br />&minus; pas viable long terme si ça scale</p>
+              </div>
+              <div class="border border-bg/15 p-3">
+                <p class="text-xs uppercase tracking-wider2 text-accent mb-1">Side-project rentable</p>
+                <p class="text-xs text-bg/70 leading-relaxed">+ on garde le contrôle<br />+ breakeven en 6-12 mois possible<br />&minus; croissance limitée par cash dispo</p>
+              </div>
+              <div class="border border-bg/15 p-3">
+                <p class="text-xs uppercase tracking-wider2 text-accent mb-1">Startup à fonds levés</p>
+                <p class="text-xs text-bg/70 leading-relaxed">+ vraie ambition de scale<br />+ capital pour brûler<br />&minus; on perd du contrôle, attentes des VCs</p>
+              </div>
+            </div>
           </div>
         </li>
       </ol>
