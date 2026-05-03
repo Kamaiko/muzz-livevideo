@@ -273,8 +273,7 @@
           La toile de fond, en chiffres utiles.
         </h2>
         <p class="text-lg text-bg/70 leading-relaxed">
-          Pas des stats fourre-tout &mdash; juste les quatre données qui changent vraiment
-          les choix qu'on s'apprête à faire.
+          Quatre données qui informent les choix qu'on s'apprête à faire.
         </p>
       </div>
 
@@ -596,12 +595,13 @@
       <div class="max-w-2xl mb-16 md:mb-20 reveal">
         <p class="text-xs uppercase tracking-wider2 text-accent mb-4">07 &middot; Annexe &middot; Contraintes à intégrer</p>
         <h2 class="font-serif text-4xl md:text-5xl leading-tight tracking-tightish mb-6">
-          Deux contraintes à garder en tête pour le build.
+          Quatre contraintes à garder en tête pour le build.
         </h2>
         <p class="text-lg text-mute leading-relaxed">
-          Maintenant que les choix produit sont sur la table, voici les deux contraintes
-          opérationnelles à intégrer dès le départ. Aucune n'est un blocage &mdash;
-          toutes peuvent se contourner. Les nommer maintenant évite de les découvrir dans 6 mois.
+          Maintenant que les choix produit sont sur la table, voici les quatre contraintes
+          opérationnelles &mdash; juridiques, économiques, techniques et légales &mdash;
+          à intégrer dès le départ. Aucune n'est un blocage&nbsp;; les nommer maintenant
+          évite de les découvrir dans 6 mois.
         </p>
       </div>
 
@@ -715,6 +715,186 @@
           <p class="text-ink font-medium border-l-2 border-accent pl-4 leading-relaxed">
             Le marché finance les concepts qui font <strong>une chose précise</strong>
             pour <strong>un public précis</strong>.
+          </p>
+        </div>
+      </div>
+
+      <!-- 4C — Modération (IA vs humain) -->
+      <div class="border border-line bg-bg p-8 md:p-12 reveal">
+        <div class="flex items-start gap-4 mb-6">
+          <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent/10 text-accent flex items-center justify-center">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-xs uppercase tracking-wider2 text-mute mb-1">Contrainte n°3 &middot; Modération</p>
+            <h3 class="font-serif text-2xl md:text-3xl">Obligatoire &mdash; mais on a le choix de l'approche.</h3>
+          </div>
+        </div>
+
+        <p class="md:pl-16 text-mute leading-relaxed mb-8">
+          Une plateforme vidéo avec inconnus <strong class="text-ink">doit</strong> avoir une forme de
+          modération &mdash; à la fois pour des raisons légales (cf. Contrainte n°4) et pour
+          que l'expérience reste utilisable. Trois approches possibles, avec leurs tradeoffs.
+        </p>
+
+        <div class="md:pl-16 grid md:grid-cols-3 gap-3 mb-8">
+          <div class="border border-line bg-bg p-5">
+            <p class="text-xs uppercase tracking-wider2 text-accent mb-2">Approche 01 &middot; IA seule</p>
+            <p class="text-sm text-mute leading-relaxed mb-3">Outils comme Hive AI, Sightengine, Modulate. Couvre 90-95 % des cas en temps réel.</p>
+            <p class="text-xs text-ink"><strong>+</strong> ~40&times; moins cher qu'humain<br /><strong>+</strong> scale instantanément<br /><strong>&minus;</strong> rate les nuances (sarcasme, grooming subtil, disputes)<br /><strong>&minus;</strong> faux positifs frustrants</p>
+          </div>
+          <div class="border border-line bg-bg p-5">
+            <p class="text-xs uppercase tracking-wider2 text-accent mb-2">Approche 02 &middot; Humain seul</p>
+            <p class="text-sm text-mute leading-relaxed mb-3">Modérateurs salariés ou freelance qui surveillent les sessions en direct.</p>
+            <p class="text-xs text-ink"><strong>+</strong> jugement contextuel solide<br /><strong>+</strong> détecte les nuances<br /><strong>&minus;</strong> ~50 000 $/an par modérateur<br /><strong>&minus;</strong> pas scalable, fatigue mentale, biais individuels</p>
+          </div>
+          <div class="border border-line bg-bg p-5">
+            <p class="text-xs uppercase tracking-wider2 text-accent mb-2">Approche 03 &middot; Hybride</p>
+            <p class="text-sm text-mute leading-relaxed mb-3">IA en temps réel (95 %) + humain on-call qui review les cas flagués en &lt; 2 min.</p>
+            <p class="text-xs text-ink"><strong>+</strong> meilleur des deux mondes<br /><strong>+</strong> coût raisonnable<br /><strong>+</strong> standard industrie (Roblox, TikTok, Bumble)<br /><strong>&minus;</strong> setup plus complexe</p>
+          </div>
+        </div>
+
+        <p class="md:pl-16 text-mute leading-relaxed mb-6">
+          <strong class="text-ink">Recommandation par défaut&nbsp;: Approche 03 (hybride)</strong>
+          &mdash; c'est ce que font toutes les apps vidéo sociales sérieuses en 2026.
+          Mais si tu veux absolument trancher pour un MVP rapide, l'<strong class="text-ink">IA seule</strong>
+          (Approche 01) est défendable au lancement, à condition d'ajouter un humain dès qu'on dépasse quelques centaines d'utilisateurs.
+        </p>
+
+        <div class="md:pl-16 mb-8">
+          <p class="text-xs uppercase tracking-wider2 text-accent mb-3">Coûts indicatifs (pour ~3 000 salons mensuels)</p>
+          <div class="grid sm:grid-cols-3 gap-3">
+            <div class="border border-line p-4">
+              <p class="font-serif text-sm font-semibold mb-1">IA seule</p>
+              <p class="text-xs text-mute">~1 500-2 500 $/mois</p>
+            </div>
+            <div class="border border-line p-4">
+              <p class="font-serif text-sm font-semibold mb-1">Humain seul</p>
+              <p class="text-xs text-mute">~6 000-12 000 $/mois</p>
+            </div>
+            <div class="border border-line p-4">
+              <p class="font-serif text-sm font-semibold mb-1">Hybride</p>
+              <p class="text-xs text-mute">~3 000-4 000 $/mois</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:pl-16">
+          <p class="text-ink font-medium border-l-2 border-accent pl-4 leading-relaxed">
+            Verdict&nbsp;: pas un blocage. À trancher entre l'IA seule (le plus rapide à lancer)
+            et l'hybride (le standard mature). Dans tous les cas, l'absence totale de modération
+            n'est plus une option viable depuis Omegle.
+          </p>
+        </div>
+      </div>
+
+      <!-- 4D — Cadre légal (vulgarisé) -->
+      <div class="border border-line bg-bg p-8 md:p-12 mt-12 reveal">
+        <div class="flex items-start gap-4 mb-6">
+          <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent/10 text-accent flex items-center justify-center">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 2v20M5 7h14l-2 5h-10z"/><path d="M5 22h14"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-xs uppercase tracking-wider2 text-mute mb-1">Contrainte n°4 &middot; Cadre légal</p>
+            <h3 class="font-serif text-2xl md:text-3xl">Ce qu'il faut savoir, en français simple.</h3>
+          </div>
+        </div>
+
+        <p class="md:pl-16 text-mute leading-relaxed mb-8">
+          Une app vidéo qui héberge des conversations entre étrangers est encadrée par
+          plusieurs lois selon les pays. Aucune n'est insurmontable, mais les ignorer
+          = poursuites garanties à terme. Voici les quatre qui touchent ton concept.
+        </p>
+
+        <div class="md:pl-16 space-y-3 mb-8">
+
+          <div class="border border-line bg-bg p-5">
+            <div class="flex items-baseline justify-between mb-1">
+              <h4 class="font-serif text-base">Loi 25 (Québec)</h4>
+              <span class="text-xs text-mute">en vigueur depuis 2023</span>
+            </div>
+            <p class="text-sm text-mute leading-relaxed mb-2">
+              Loi sur la protection des renseignements personnels. Tout ce qui est collecté
+              sur un utilisateur (nom, email, vidéos, métadonnées) doit&nbsp;:
+            </p>
+            <ul class="text-sm text-ink leading-relaxed space-y-1">
+              <li>· Avoir un consentement clair (cases à cocher, pas pré-cochées)</li>
+              <li>· Être stocké au Canada ou avec garanties équivalentes</li>
+              <li>· Pouvoir être supprimé sur demande de l'utilisateur ($droit à l'oubli$)</li>
+              <li>· Être documenté dans une politique de confidentialité accessible</li>
+            </ul>
+            <p class="text-xs text-mute mt-3 italic">Sanctions max&nbsp;: 25 M$ ou 4&nbsp;% du chiffre d'affaires mondial.</p>
+          </div>
+
+          <div class="border border-line bg-bg p-5">
+            <div class="flex items-baseline justify-between mb-1">
+              <h4 class="font-serif text-base">DSA &mdash; Digital Services Act (Union européenne)</h4>
+              <span class="text-xs text-mute">en vigueur depuis 2024</span>
+            </div>
+            <p class="text-sm text-mute leading-relaxed mb-2">
+              S'applique dès qu'on a des utilisateurs en Europe. Trois obligations clés&nbsp;:
+            </p>
+            <ul class="text-sm text-ink leading-relaxed space-y-1">
+              <li>· Mécanisme de signalement de contenu illégal (le bouton Report)</li>
+              <li>· Retrait du contenu signalé en 24-48h max</li>
+              <li>· Transparence sur les algorithmes de modération (rapport annuel)</li>
+            </ul>
+            <p class="text-xs text-mute mt-3 italic">Sanctions max&nbsp;: 6&nbsp;% du chiffre d'affaires mondial.</p>
+          </div>
+
+          <div class="border border-line bg-bg p-5">
+            <div class="flex items-baseline justify-between mb-1">
+              <h4 class="font-serif text-base">COPPA &mdash; protection des mineurs (États-Unis)</h4>
+              <span class="text-xs text-mute">vérification d'âge obligatoire</span>
+            </div>
+            <p class="text-sm text-mute leading-relaxed mb-2">
+              Toute app accessible à des moins de 13 ans aux US doit&nbsp;:
+            </p>
+            <ul class="text-sm text-ink leading-relaxed space-y-1">
+              <li>· Soit interdire les moins de 13 ans (vérification d'âge à l'inscription)</li>
+              <li>· Soit obtenir consentement parental vérifiable + restrictions strictes</li>
+            </ul>
+            <p class="text-xs text-mute mt-3 italic">Solution la plus simple&nbsp;: 18+ obligatoire à l'inscription, point.</p>
+          </div>
+
+          <div class="border border-line bg-bg p-5">
+            <div class="flex items-baseline justify-between mb-1">
+              <h4 class="font-serif text-base">Détection CSAM &mdash; obligatoire partout</h4>
+              <span class="text-xs text-mute">contenu pédopornographique</span>
+            </div>
+            <p class="text-sm text-mute leading-relaxed">
+              Toute plateforme avec contenu vidéo généré par utilisateurs DOIT
+              utiliser des outils de détection (PhotoDNA de Microsoft, gratuit pour les petites
+              plateformes). Tout contenu détecté doit être signalé au NCMEC (US) et équivalents.
+              Non négociable, peu importe la taille.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="md:pl-16">
+          <p class="text-xs uppercase tracking-wider2 text-accent mb-3">Ce qu'il faut faire pour être conforme dès le MVP</p>
+          <div class="border border-line bg-bg p-5 mb-6">
+            <ul class="text-sm text-ink leading-relaxed space-y-2">
+              <li>· Politique de confidentialité &amp; CGU rédigées par un avocat (~1500-3000 $ une fois)</li>
+              <li>· Consentement clair à l'inscription (case à cocher non pré-cochée)</li>
+              <li>· 18+ obligatoire avec vérification d'âge minimale (date de naissance + carte de crédit ou ID)</li>
+              <li>· Bouton Report dans chaque lobby + procédure documentée</li>
+              <li>· Modération IA + humain on-call (cf. Contrainte n°3)</li>
+              <li>· Détection CSAM via PhotoDNA ou équivalent</li>
+              <li>· Stockage des données au Canada (AWS Montréal, OVH, etc.)</li>
+              <li>· Page «&nbsp;contact légal&nbsp;» pour subpoenas et demandes des autorités</li>
+            </ul>
+          </div>
+          <p class="text-ink font-medium border-l-2 border-accent pl-4 leading-relaxed">
+            Verdict&nbsp;: pas optionnel, mais pas un mur. Compte ~3-5K $ de frais juridiques
+            initiaux + intégrer les checklists dans le développement dès le départ. Beaucoup
+            moins cher que de gérer une poursuite après coup.
           </p>
         </div>
       </div>
